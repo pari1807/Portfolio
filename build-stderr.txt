@@ -1,0 +1,12 @@
+Failed to compile.
+
+./src/components/animated-background.tsx
+Module not found: Package path . is not exported from package C:\Users\paritosh\Desktop\Portfolio-main\node_modules\@splinetool\react-spline (see exports field in C:\Users\paritosh\Desktop\Portfolio-main\node_modules\@splinetool\react-spline\package.json)
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/page.tsx
+
+
+> Build failed because of webpack errors

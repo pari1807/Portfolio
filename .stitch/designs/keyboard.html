@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KEB_DEV | Tech Stack</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary": "#450086",
+                        "surface-container-lowest": "#120c16",
+                        "outline": "#948ea1",
+                        "surface-bright": "#3e3642",
+                        "secondary-fixed-dim": "#9ecaff",
+                        "secondary-fixed": "#d1e4ff",
+                        "on-tertiary-fixed-variant": "#582a9f",
+                        "on-secondary-fixed-variant": "#00497d",
+                        "surface-container-high": "#2f2732",
+                        "on-tertiary-container": "#fdf6ff",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#855ace",
+                        "primary-container": "#9244f4",
+                        "on-surface": "#ebdeee",
+                        "on-surface-variant": "#cac3d8",
+                        "on-secondary-fixed": "#001d36",
+                        "inverse-surface": "#ebdeee",
+                        "surface-tint": "#d8b9ff",
+                        "on-primary-fixed-variant": "#6200bc",
+                        "surface-variant": "#3a323d",
+                        "surface-container-highest": "#3a323d",
+                        "inverse-on-surface": "#352e39",
+                        "secondary-container": "#1e95f2",
+                        "on-secondary": "#003258",
+                        "on-tertiary-fixed": "#260058",
+                        "primary-fixed-dim": "#d8b9ff",
+                        "tertiary-fixed-dim": "#d4bbff",
+                        "primary-fixed": "#eddcff",
+                        "on-primary-container": "#fef6ff",
+                        "background": "#17111b",
+                        "on-tertiary": "#400688",
+                        "on-secondary-container": "#002b4d",
+                        "inverse-primary": "#7e28df",
+                        "secondary": "#9ecaff",
+                        "surface-dim": "#17111b",
+                        "surface-container": "#241d28",
+                        "on-background": "#ebdeee",
+                        "tertiary-fixed": "#ebdcff",
+                        "surface": "#17111b",
+                        "outline-variant": "#494455",
+                        "error-container": "#93000a",
+                        "on-primary-fixed": "#290055",
+                        "error": "#ffb4ab",
+                        "on-error": "#690005",
+                        "tertiary": "#d4bbff",
+                        "primary": "#d8b9ff",
+                        "surface-container-low": "#201924"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .keycap-bevel {
+            box-shadow: 
+                inset 0 2px 2px rgba(216, 185, 255, 0.1),
+                inset 0 -4px 0 rgba(0, 0, 0, 0.4),
+                4px 6px 12px rgba(0, 0, 0, 0.6);
+        }
+        .keycap-active:active {
+            transform: translateY(2px);
+            box-shadow: 
+                inset 0 1px 1px rgba(216, 185, 255, 0.05),
+                inset 0 -2px 0 rgba(0, 0, 0, 0.4),
+                2px 3px 6px rgba(0, 0, 0, 0.6);
+        }
+        .vignette {
+            background: radial-gradient(circle, transparent 40%, #120c16 100%);
+            pointer-events: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container/30 overflow-x-hidden">
+<!-- Vignette Overlays for Neon Nocturne Aesthetic -->
+<div class="fixed inset-0 vignette z-40"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#17111b]/80 backdrop-blur-xl border-b border-[#494455]/15 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] flex items-center justify-between px-6 h-16">
+<div class="flex items-center gap-3 active:scale-95 duration-200 cursor-pointer">
+<span class="material-symbols-outlined text-[#d8b9ff]">keyboard</span>
+<span class="text-xl font-black tracking-[-0.04em] text-transparent bg-clip-text bg-gradient-to-r from-[#9244f4] to-[#1e95f2] font-headline uppercase">KEB_DEV</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#cac3d8] hover:text-[#ebdeee] transition-colors duration-300 active:scale-95">settings_input_component</button>
+</div>
+</header>
+<main class="relative z-10 pt-24 pb-32 px-6 max-w-lg mx-auto min-h-screen">
+<!-- Editorial Headline -->
+<div class="mb-12">
+<p class="text-[10px] font-medium tracking-[0.2rem] uppercase text-primary mb-2 opacity-80">System Resources</p>
+<h1 class="text-5xl font-black tracking-[-0.05em] leading-none mb-4 text-on-surface">The <span class="text-transparent bg-clip-text bg-gradient-to-br from-primary to-secondary-container">Stack</span></h1>
+<div class="h-px w-12 bg-gradient-to-r from-primary-container to-transparent"></div>
+</div>
+<!-- The Keyboard Grid -->
+<div class="grid grid-cols-3 gap-3 md:gap-4 select-none">
+<!-- Key: React -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-primary group-hover:drop-shadow-[0_0_8px_rgba(146,68,244,0.8)] transition-all">orbit</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">React</span>
+</div>
+<!-- Key: Next.js -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-secondary-container group-hover:drop-shadow-[0_0_8px_rgba(30,149,242,0.8)] transition-all">bolt</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">Next.js</span>
+</div>
+<!-- Key: TypeScript -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-primary group-hover:drop-shadow-[0_0_8px_rgba(146,68,244,0.8)] transition-all">code_blocks</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">TS</span>
+</div>
+<!-- Key: Tailwind -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-secondary-container group-hover:drop-shadow-[0_0_8px_rgba(30,149,242,0.8)] transition-all">palette</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">Tailwind</span>
+</div>
+<!-- Key: Zustand -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-primary group-hover:drop-shadow-[0_0_8px_rgba(146,68,244,0.8)] transition-all">database</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">Zustand</span>
+</div>
+<!-- Key: TanStack Query -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-secondary-container group-hover:drop-shadow-[0_0_8px_rgba(30,149,242,0.8)] transition-all">sync_alt</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">Query</span>
+</div>
+<!-- Key: Node.js -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-primary group-hover:drop-shadow-[0_0_8px_rgba(146,68,244,0.8)] transition-all">javascript</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">Node.js</span>
+</div>
+<!-- Key: Express -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-secondary-container group-hover:drop-shadow-[0_0_8px_rgba(30,149,242,0.8)] transition-all">router</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">Express</span>
+</div>
+<!-- Key: MongoDB -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-primary group-hover:drop-shadow-[0_0_8px_rgba(146,68,244,0.8)] transition-all">storage</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">MongoDB</span>
+</div>
+<!-- Key: PostgreSQL -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-secondary-container group-hover:drop-shadow-[0_0_8px_rgba(30,149,242,0.8)] transition-all">table_chart</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">Postgres</span>
+</div>
+<!-- Key: Docker -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-primary group-hover:drop-shadow-[0_0_8px_rgba(146,68,244,0.8)] transition-all">token</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">Docker</span>
+</div>
+<!-- Key: Git -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-secondary-container group-hover:drop-shadow-[0_0_8px_rgba(30,149,242,0.8)] transition-all">account_tree</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">Git</span>
+</div>
+<!-- Key: GitHub -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-primary group-hover:drop-shadow-[0_0_8px_rgba(146,68,244,0.8)] transition-all">hub</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">GitHub</span>
+</div>
+<!-- Key: Postman -->
+<div class="keycap-active keycap-bevel bg-surface-container-high rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-outline-variant/10 group transition-all duration-300 hover:bg-surface-bright/40">
+<span class="material-symbols-outlined text-secondary-container group-hover:drop-shadow-[0_0_8px_rgba(30,149,242,0.8)] transition-all">api</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface-variant group-hover:text-on-surface">Postman</span>
+</div>
+<!-- Key: Shift (Decorative) -->
+<div class="keycap-active keycap-bevel bg-gradient-to-br from-primary-container/20 to-secondary-container/20 rounded-xl p-4 aspect-square flex flex-col items-center justify-center gap-2 border border-primary/20 group transition-all duration-300 hover:scale-[1.02]">
+<span class="material-symbols-outlined text-primary">keyboard_double_arrow_up</span>
+<span class="text-[10px] font-bold tracking-tight uppercase text-on-surface">Shift</span>
+</div>
+</div>
+<!-- Decorative Floating Elements -->
+<div class="mt-16 bg-surface-container-low/50 backdrop-blur-md rounded-2xl p-6 border border-outline-variant/10 relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+<p class="text-[10px] uppercase tracking-[0.1rem] text-primary font-bold mb-2">Status Terminal</p>
+<div class="font-mono text-xs text-on-surface-variant space-y-1">
+<p><span class="text-secondary-container">&gt;</span> env_init: successful</p>
+<p><span class="text-secondary-container">&gt;</span> components_load: 14/14</p>
+<p><span class="text-primary">&gt;</span> system_ready: true</p>
+</div>
+</div>
+</main>
+<!-- NavigationDrawer (Mobile Hidden by default but structure ready) -->
+<div class="fixed inset-y-0 left-0 z-[60] py-8 flex flex-col h-full w-[280px] rounded-r-3xl bg-[#201924] bg-gradient-to-b from-[#17111b] to-[#201924] shadow-[20px_0_60px_rgba(0,0,0,0.8)] transition-transform -translate-x-full md:hidden">
+<div class="px-6 mb-8 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/30">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="professional portrait of a tech architect with atmospheric neon purple lighting and digital overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBocEO0ewhScHqiZQ4kvVeTn0STcEfcd38PMx4K8xbMRLJT8JQp6oC--Lo9sanuwoOGUIF0RXMEJyJ2jNqbNuTuoL1pDMinE8QtXr-2IjUUzJK5uIbHe58G1KmGaKUO45eMnwAfhKqnvaCIOrWyG7U2AjbtPLh0t4rIAYi-TwS3dVeIAbdQ00BCzmoSY5NjKE7AELHuyCV7VUYSVzEaCalMMXF-t_Sq_M7KxL63nhCvEEvxr80xVJKEx9j4kb2kcfNwF1qWXN2rcFw"/>
+</div>
+<div>
+<h3 class="font-headline font-bold text-[#ebdeee]">Lead_Architect</h3>
+<p class="text-xs text-[#cac3d8] opacity-70">v2.0.4</p>
+</div>
+</div>
+<nav class="flex-1 px-4 space-y-2">
+<div class="flex items-center gap-4 px-4 py-3 bg-gradient-to-r from-[#9244f4]/20 to-transparent text-[#d8b9ff] border-l-4 border-[#9244f4]">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="font-medium">Switch Profile</span>
+</div>
+<div class="flex items-center gap-4 px-4 py-3 text-[#cac3d8] hover:bg-[#3e3642]/20 hover:pl-6 transition-all duration-300">
+<span class="material-symbols-outlined">palette</span>
+<span class="font-medium">Keycap Sets</span>
+</div>
+<div class="flex items-center gap-4 px-4 py-3 text-[#cac3d8] hover:bg-[#3e3642]/20 hover:pl-6 transition-all duration-300">
+<span class="material-symbols-outlined">memory</span>
+<span class="font-medium">Firmware</span>
+</div>
+</nav>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 rounded-t-2xl bg-[#17111b]/90 backdrop-blur-2xl border-t border-[#494455]/20 shadow-[0_-10px_40px_rgba(0,0,0,0.5)] flex justify-around items-center h-20 pb-safe px-4">
+<div class="flex flex-col items-center justify-center text-[#cac3d8] opacity-60 px-3 py-1.5 hover:bg-[#3e3642]/40 hover:opacity-100 transition-all active:translate-y-0.5 duration-150">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium tracking-[0.1rem] uppercase font-['Inter'] mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#cac3d8] opacity-60 px-3 py-1.5 hover:bg-[#3e3642]/40 hover:opacity-100 transition-all active:translate-y-0.5 duration-150">
+<span class="material-symbols-outlined">reorder</span>
+<span class="text-[10px] font-medium tracking-[0.1rem] uppercase font-['Inter'] mt-1">Builds</span>
+</div>
+<!-- Active Tab: Stack -->
+<div class="flex flex-col items-center justify-center bg-[#9244f4]/10 text-[#d8b9ff] rounded-xl px-3 py-1.5 border border-[#9244f4]/30 active:translate-y-0.5 duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">layers</span>
+<span class="text-[10px] font-medium tracking-[0.1rem] uppercase font-['Inter'] mt-1">Stack</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#cac3d8] opacity-60 px-3 py-1.5 hover:bg-[#3e3642]/40 hover:opacity-100 transition-all active:translate-y-0.5 duration-150">
+<span class="material-symbols-outlined">terminal</span>
+<span class="text-[10px] font-medium tracking-[0.1rem] uppercase font-['Inter'] mt-1">Logs</span>
+</div>
+</nav>
+</body></html>

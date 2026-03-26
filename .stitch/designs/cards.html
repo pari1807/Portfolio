@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#948ea1",
+              "inverse-surface": "#ebdeee",
+              "on-surface-variant": "#cac3d8",
+              "on-error": "#690005",
+              "primary-container": "#9244f4",
+              "secondary-fixed-dim": "#9ecaff",
+              "inverse-primary": "#7e28df",
+              "secondary": "#9ecaff",
+              "on-primary-fixed": "#290055",
+              "surface": "#17111b",
+              "on-primary-fixed-variant": "#6200bc",
+              "surface-container-lowest": "#120c16",
+              "on-primary-container": "#fef6ff",
+              "surface-container": "#241d28",
+              "secondary-fixed": "#d1e4ff",
+              "primary-fixed-dim": "#d8b9ff",
+              "tertiary-container": "#855ace",
+              "surface-tint": "#d8b9ff",
+              "on-tertiary-fixed": "#260058",
+              "surface-container-low": "#201924",
+              "surface-dim": "#17111b",
+              "on-secondary": "#003258",
+              "on-background": "#ebdeee",
+              "on-error-container": "#ffdad6",
+              "surface-container-highest": "#3a323d",
+              "on-secondary-fixed": "#001d36",
+              "secondary-container": "#1e95f2",
+              "surface-bright": "#3e3642",
+              "inverse-on-surface": "#352e39",
+              "on-secondary-container": "#002b4d",
+              "on-tertiary-container": "#fdf6ff",
+              "on-secondary-fixed-variant": "#00497d",
+              "primary-fixed": "#eddcff",
+              "error": "#ffb4ab",
+              "outline-variant": "#494455",
+              "surface-container-high": "#2f2732",
+              "primary": "#d8b9ff",
+              "on-primary": "#450086",
+              "error-container": "#93000a",
+              "background": "#17111b",
+              "tertiary-fixed-dim": "#d4bbff",
+              "tertiary": "#d4bbff",
+              "on-surface": "#ebdeee",
+              "tertiary-fixed": "#ebdcff",
+              "surface-variant": "#3a323d",
+              "on-tertiary": "#400688",
+              "on-tertiary-fixed-variant": "#582a9f"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        backdrop-filter: blur(12px);
+        background-color: rgba(36, 29, 40, 0.6);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#17111b]/80 backdrop-blur-xl border-b border-[#494455]/15 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
+<div class="flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#d8b9ff] active:scale-95 transition-transform cursor-pointer">menu</span>
+<span class="text-xl font-black tracking-widest text-[#d8b9ff] font-['Inter'] uppercase">NEON_NOCTURNE</span>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="close-up professional headshot of a developer in a dark studio setting with subtle purple rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWWhbQGnklIkXyjvPEJvSA4Q4XfNCzgr241594pzzePhN2p_y0ie-rihqo5wwA1LT9gCI7k7F1VJSI25hovrZVQeTJDEVBygggn0T2L7Midj9VuKzTVB5sale8758RgqeDUmjGtLeZwX7Va5HXnYlYNIoo8niij0u1JtNraZ3a5p5GQz58jBwVnFe1wHyWiTyctx5lk7NljQ21GpZonXJudPdCLiKygFlJibdwzsXrE3_RwXEQFmUJwsVucIOfNrpZpqei3u30ShA"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Welcome Section -->
+<section class="mb-12">
+<span class="text-primary text-[10px] font-medium uppercase tracking-[0.2rem] mb-2 block">Available for hire</span>
+<h1 class="text-4xl font-extrabold tracking-tighter text-on-surface mb-4 leading-none">
+                BUILDING DIGITAL <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-secondary-container">ARTIFACTS.</span>
+</h1>
+<p class="text-on-surface-variant body-lg leading-relaxed max-w-md">
+                Full-stack engineer specializing in high-performance visual interfaces and robust architectural systems.
+            </p>
+</section>
+<!-- Projects Grid -->
+<section class="space-y-6">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-lg font-bold tracking-tight text-primary uppercase">Projects</h2>
+<span class="text-xs text-on-surface-variant font-label opacity-60">03 / SELECTED</span>
+</div>
+<!-- Project Card 1 -->
+<div class="surface-container-low p-6 rounded-xl border border-outline-variant/15 shadow-sm transition-all duration-300 hover:surface-container-high group">
+<div class="flex justify-between items-start mb-4">
+<div class="bg-surface-container-highest p-2 rounded-lg">
+<span class="material-symbols-outlined text-secondary">grid_view</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">north_east</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-2">Lumina Analytics</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                    Real-time data visualization platform with 60fps interaction models and low-latency processing.
+                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-medium uppercase tracking-wider text-on-surface-variant">TypeScript</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-medium uppercase tracking-wider text-on-surface-variant">D3.js</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-medium uppercase tracking-wider text-on-surface-variant">Rust</span>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="surface-container-low p-6 rounded-xl border border-outline-variant/15 shadow-sm transition-all duration-300 hover:surface-container-high group">
+<div class="flex justify-between items-start mb-4">
+<div class="bg-surface-container-highest p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">bolt</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">north_east</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-2">Flux Engine</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                    A proprietary state management library designed for distributed systems and offline-first mobile apps.
+                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-medium uppercase tracking-wider text-on-surface-variant">React Native</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-medium uppercase tracking-wider text-on-surface-variant">SQLite</span>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="surface-container-low p-6 rounded-xl border border-outline-variant/15 shadow-sm transition-all duration-300 hover:surface-container-high group">
+<div class="flex justify-between items-start mb-4">
+<div class="bg-surface-container-highest p-2 rounded-lg">
+<span class="material-symbols-outlined text-tertiary">folder_special</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">north_east</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-2">Nocturne OS</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                    An experimental web-based operating system focused on aesthetic minimalism and terminal-first workflows.
+                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-medium uppercase tracking-wider text-on-surface-variant">WASM</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-medium uppercase tracking-wider text-on-surface-variant">Go</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-medium uppercase tracking-wider text-on-surface-variant">Tailwind</span>
+</div>
+</div>
+</section>
+<!-- Skills Bento Section -->
+<section class="mt-16 mb-12">
+<h2 class="text-lg font-bold tracking-tight text-primary uppercase mb-6">Expertise</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="surface-container-low p-6 rounded-xl border border-outline-variant/15 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-primary-container text-3xl mb-3">cloud</span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface">Cloud Arch</span>
+</div>
+<div class="surface-container-low p-6 rounded-xl border border-outline-variant/15 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-secondary-container text-3xl mb-3">auto_awesome</span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface">AI Synthesis</span>
+</div>
+<div class="col-span-2 surface-container-low p-6 rounded-xl border border-outline-variant/15 flex items-center gap-6">
+<span class="material-symbols-outlined text-tertiary text-4xl">terminal</span>
+<div class="text-left">
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface block mb-1">Low-Level Systems</span>
+<p class="text-[10px] text-on-surface-variant leading-tight">Optimizing memory and compute for critical applications.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-[#201924]/90 backdrop-blur-2xl border-t border-[#494455]/20 shadow-[0_-10px_40px_rgba(146,68,244,0.1)] z-50 rounded-t-2xl">
+<a class="flex flex-col items-center justify-center bg-gradient-to-tr from-[#9244f4] to-[#1e95f2] text-[#ebdeee] rounded-xl px-4 py-1.5 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="text-[10px] font-medium uppercase tracking-[0.1rem] font-['Inter'] mt-0.5">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#cac3d8] opacity-70 hover:opacity-100 hover:text-[#d8b9ff] active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">bolt</span>
+<span class="text-[10px] font-medium uppercase tracking-[0.1rem] font-['Inter'] mt-0.5">Skills</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#cac3d8] opacity-70 hover:opacity-100 hover:text-[#d8b9ff] active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">folder_special</span>
+<span class="text-[10px] font-medium uppercase tracking-[0.1rem] font-['Inter'] mt-0.5">Archive</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#cac3d8] opacity-70 hover:opacity-100 hover:text-[#d8b9ff] active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-[10px] font-medium uppercase tracking-[0.1rem] font-['Inter'] mt-0.5">Contact</span>
+</a>
+</nav>
+<!-- Vignette Overlays for depth as per design system -->
+<div class="fixed inset-0 pointer-events-none z-40 bg-[radial-gradient(circle_at_top_right,transparent_60%,#17111b_100%)] opacity-40"></div>
+<div class="fixed inset-0 pointer-events-none z-40 bg-[radial-gradient(circle_at_bottom_left,transparent_60%,#17111b_100%)] opacity-40"></div>
+</body></html>
